@@ -1,0 +1,10 @@
+.triggerContainer {
+    background-image: url("https://titamedia.vteximg.com.br/arquivos/icon-menu.png");
+    width: 56px;
+    height: 56px;
+}
+
+/* Ocultar svg por defecto */
+.triggerButtonIcon--active {
+    display: none;
+}

@@ -1,0 +1,63 @@
+{
+    "modal-trigger#quickview": {
+        "children":[
+          "image#quickview",
+          "modal-layout#quickview"
+        ],
+        "props":{
+          "blockClass": "quickview",
+          "width":"30%"
+        }
+      },
+      "image#quickview": {
+        "props": {
+          "title": "imgquickview",
+          "src": "https://titamedia.vteximg.com.br/arquivos/img-quickview-santafe.png",
+          "width": "41px"
+        }
+      },
+      "modal-layout#quickview": {
+          "children": [
+          "modal-header",
+          "flex-layout.row#qvcontent"
+           
+         ],
+         "props":{
+           "blockClass": "mquickview",
+           "disableEscapeKeyDown": false
+         }
+       },
+       "flex-layout.row#qvcontent": {
+         "children":[
+          "flex-layout.col#qvimage",
+          "flex-layout.col#qvcont"   
+         ],
+         "props":{
+           "blockClass": "qvcontent"
+         }
+       },
+       "flex-layout.col#qvimage":{
+         "children": [
+          "product-images"
+         ],
+         "props":{
+          "blockClass": "qimage",
+          "width": "40%",
+          "maxHeight": "auto"
+        }
+       },
+       "flex-layout.col#qvcont":{
+         "children":[
+          "product-summary-name",
+          "product-summary-brand",
+          "product-summary-price",
+          "product-summary-sku-selector",
+          "product-summary-quantity",
+          "add-to-cart-button"
+         ],
+         "props":{
+          "blockClass": "qcont",
+          "width": "60%"
+        }
+       }
+}

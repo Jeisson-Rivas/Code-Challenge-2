@@ -1,0 +1,33 @@
+.homeIcon {
+    display: none;
+}
+
+.homeLink::before {
+    content: "Home";
+}
+
+.link {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #233C52;
+}
+
+.caretIcon {
+    display: none;
+}
+
+.arrow::before {
+    content: "/";
+}
+
+.link {
+    display: inline-block;
+    text-transform: lowercase;
+}
+
+.link::first-letter {
+    text-transform: uppercase;
+}

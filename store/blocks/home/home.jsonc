@@ -1,0 +1,549 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "flex-layout.row#home__section",
+      "flex-layout.row#banner-vitrina",  
+      "flex-layout.row#banner-terciario",
+      "flex-layout.row#banner-cuadricula",
+      "responsive-layout.mobile#banner-dos-banners-mobile",
+      "flex-layout.row#banner-trinidad",
+      "tab-layout#home",
+      "flex-layout.row#Marcas",
+      "flex-layout.row#banner-informativo"
+
+      
+    ]
+  },
+
+ 
+  // Slider banners principales
+  "list-context.image-list#demo": {
+    "title": "Slider principal",
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "preload": true,
+      "height": 650,
+      "images": [
+        {
+          "image": "https://titamedia.myvtex.com//arquivos/Banner-principal.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://titamedia.myvtex.com//arquivos/Banner-principal.png",
+          "description": "something something"
+        },
+        {
+          "image": "https://titamedia.myvtex.com//arquivos/Banner-principal.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "title": "Banners principales",
+    "props": {
+      "blockClass": "slider-main",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  //Banner secundario y vitrina
+  "flex-layout.row#banner-vitrina": {
+    "title": "Banner secundario y vitrina",
+    "props": {
+      "blockClass": "second-banner",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#banner-secundario",
+      "flex-layout.col#vitrina-secundario"
+    ]
+  },
+
+  "flex-layout.col#banner-secundario": {
+    "title": "Banner secundario",
+    "children": ["image#example"]
+  },
+
+  "image#example": {
+    "props": {
+      "src": "https://titamedia.vteximg.com.br/arquivos/second-banner.png",
+      "maxHeight": 433
+    }
+  },
+
+
+  "flex-layout.col#vitrina-secundario": {
+    "title": "Vitrina secundaria",
+    "children":["slider-layout-group#test"]
+  },
+
+  "slider-layout-group#test": {
+    "children": [
+      "slider-layout#text-test-v",
+      "slider-layout#text-test2-v"
+    ]
+  },
+
+
+  "slider-layout#text-test-v": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "carousel"
+    },
+    "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+  },
+
+
+  "slider-layout#text-test2-v": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+  },
+
+  "rich-text#1": {
+    "props": {
+      "text": "Test1"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Test2"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "Test3"
+    }
+  },
+
+  "flex-layout.row#banner-terciario": {
+    "title": "Banner terciario",
+    "props": {
+      "blockClass": "second-banner",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#banner-terciario"
+    ]
+  },
+
+  "flex-layout.col#banner-terciario": {
+    "title": "Banner secundario",
+    "children": ["list-context.image-list#banner-secundarios"]
+  },
+  "slider-layout#banners-secundarios": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "infinite": false,
+      "blockClass": "slider-mario"
+    }
+  },
+  "list-context.image-list#banner-secundarios": {
+    "title": "Banner Cámara",
+    "children": ["slider-layout#banners-secundarios"],
+    "props": {
+      "marginBottom": 6,
+      "fullWidth": true,
+      /* "height": 360, */
+      "images": [
+        {
+          "image": "https://titamedia.myvtex.com//arquivos/BANNER_TENNIS.png",
+          "mobileImage": "assets/images/adidas.svg"
+        }
+      ]
+    }
+  },
+
+  /*Banner Cuadricula*/
+  "flex-layout.row#banner-cuadricula": {
+    "title": "Banner secundario y cuadricula",
+    "props": {
+      "blockClass": "second-banner",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.image-list#imagen-american",
+      "list-context.image-list#imagen-offcorss"
+    ]
+  },
+
+  "list-context.image-list#imagen-american": {
+    "title": "Banner American",
+    "children": ["slider-layout#banners-secundarios"],
+    "props": {
+      "marginBottom": 6,
+      "fullWidth": true,
+      /* "height": 360, */
+      "images": [
+        {
+          "image": "https://titamedia.myvtex.com//arquivos/BANNER_30_DESCUENTO.png",
+          "mobileImage": "assets/images/American-Mobile.png"
+        }
+      ]
+    }
+  },
+
+
+  "list-context.image-list#imagen-offcorss": {
+    "title": "Banner Offcorss",
+    "children": ["slider-layout#banners-secundarios"],
+    "props": {
+      "marginBottom": 6,
+      "fullWidth": true,
+      /* "height": 360, */
+      "images": [
+        {
+          "image": "https://titamedia.myvtex.com//arquivos/BANNER_OFFCORS.png",
+          "mobileImage": "assets/images/Offcorss-Mobile.png"
+        }
+      ]
+    }
+  },
+
+    /*Banner Trinidad*/
+    "flex-layout.row#banner-trinidad": {
+      "title": "Banner terciario con cuadricula",
+      "props": {
+        "blockClass": "second-banner",
+        "horizontalAlign": "center",
+        "verticalAlign": "center",
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
+        "fullWidth": true
+      },
+      "children": [
+        "flex-layout.col#banner-septimo-cuadricula",
+        "flex-layout.col#banner-quinto-cuadricula",
+        "flex-layout.col#banner-sexto-cuadricula"
+      ]
+    },
+  
+    "flex-layout.col#banner-septimo-cuadricula": {
+      "title": "Banner septimo",
+      "children": ["image#bannerseptimo"]
+    },
+  
+    "image#bannerseptimo": {
+      "props": {
+        "src": "https://titamedia.myvtex.com//arquivos/CASA_IDEAS_CODE.png",
+        "maxHeight": 500
+      }
+    },
+  
+  
+    "flex-layout.col#banner-quinto-cuadricula": {
+      "title": "Banner quinto",
+      "children": ["image#bannerquinto"]
+    },
+  
+    "image#bannerquinto": {
+      "props": {
+        "src": "https://titamedia.myvtex.com//arquivos/ONDA_MAR.png",
+        "maxHeight": 500
+      }
+    },
+  
+    "flex-layout.col#banner-sexto-cuadricula": {
+      "title": "Banner sexto",
+      "children": ["image#bannersexto"]
+    },
+  
+    "image#bannersexto": {
+      "props": {
+        "src": "https://titamedia.myvtex.com//arquivos/CROMANTIC.png",
+        "maxHeight": 500
+      }
+    },
+  
+  
+
+  //Primera vitrina
+  "flex-layout.row#home__section": {
+    "title": "Primera vitrina",
+    "children": ["flex-layout.col#home_section"],
+    "props": {
+      "blockClass": "home__section--one",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#home_section": {
+    "children": [
+      "rich-text#home__section--one",
+      "list-context.product-list#demo1"
+    ]
+  },
+
+  "rich-text#home__section--one": {
+    "title": "Texto",
+    "props": {
+      "text": "Productos Estrella de Mi Mundo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#categoria"],
+    "children": ["slider-layout#demo-products"]
+  },
+
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never"
+    }
+  },
+
+/*Marcas*/
+  "flex-layout.row#Marcas": {
+    "title": "Banner de Marcas",
+    "props": {
+      "blockClass": "second-banner",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#titulo-marcas"
+
+    ]
+  },
+
+  "flex-layout.col#titulo-marcas": {
+    "title": "Banner septimo",
+    "children": ["image#titulo-marcas"]
+  },
+//Titulo marcas
+"image#titulo-marcas": {
+    "props": {
+      "src": "https://titamedia.myvtex.com//arquivos/Imagen_marcas.png",
+      "maxHeight": 500
+    }
+  },
+
+ 
+//Informativo Desktop
+  "flex-layout.row#banner-informativo": {
+    "title": "Iconos de medios de pago",
+    "props": {
+      "blockClass": "banners-finales"
+    },
+
+    "children": [
+      "flex-layout.col#envio",
+      "flex-layout.col#tiendas",
+      "flex-layout.col#compra",
+      "flex-layout.col#registro"
+
+    ]
+  },
+
+    "flex-layout.col#envio": {
+    "title": "Primer texto",
+    "children": [
+      "flex-layout.row#envio"
+    ]
+  },
+
+  "flex-layout.row#envio": {
+    "title": "Primer texto",
+    "children": [
+      "image#envio",
+      "rich-text#envio" 
+
+    ]
+  },
+
+  "image#envio": {
+    "props": {
+      "src": "https://titamedia.myvtex.com//arquivos/envio-express.png",
+      "maxWidth": 90,
+      "maxHeight": 90
+    }
+  },
+
+  "rich-text#envio": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Envíos \n Expres",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+  
+  
+
+  "flex-layout.col#tiendas": {
+    "title": "Primer texto",
+    "children": [
+      "flex-layout.row#tiendas"
+    ]
+  },
+
+  "flex-layout.row#tiendas": {
+    "title": "Primer texto",
+    "children": [
+      "image#tiendas",
+      "rich-text#tiendas" 
+
+    ]
+  },
+
+  "image#tiendas": {
+    "props": {
+      "src": "https://titamedia.myvtex.com//arquivos/todas-tus-tiendas.png",
+      "maxWidth": 90,
+      "maxHeight": 90
+    }
+  },
+
+  "rich-text#tiendas": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Todas tus tiendas en un solo lugar",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "flex-layout.col#compra": {
+    "title": "Primer texto",
+    "children": [
+      "flex-layout.row#compra"
+    ]
+  },
+
+  "flex-layout.row#compra": {
+    "title": "Primer texto",
+    "children": [
+      "image#compra",
+      "rich-text#compra"
+
+    ]
+  },
+
+  "image#compra": {
+    "props": {
+      "src": "https://titamedia.myvtex.com//arquivos/Compra-segura.png",
+      "maxWidth": 90,
+      "maxHeight": 90
+    }
+  },
+
+  "rich-text#compra": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Compra 100% \n segura",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+
+  "flex-layout.col#registro": {
+    "title": "Primer texto",
+    "children": [
+      "flex-layout.row#registro"
+    ]
+  },
+
+  "flex-layout.row#registro": {
+    "title": "Primer texto",
+    "children": [
+      "image#registro",
+      "rich-text#registro" 
+
+    ]
+  },
+
+  "image#registro": {
+    "props": {
+      "src": "https://titamedia.myvtex.com//arquivos/registrar-tu factura.png",
+      "maxWidth": 90,
+      "maxHeight": 90
+    }
+  },
+
+    "rich-text#registro": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "No olvides registrar tu factura",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  }
+}
+
+
+  
+
+
+

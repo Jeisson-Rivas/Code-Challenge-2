@@ -1,0 +1,41 @@
+{
+    "responsive-layout.mobile#banner-dos-banners-mobile": {
+        "children": ["flex-layout.row#banner-dos-banners-mobile" ]
+      },
+      
+      
+        "flex-layout.row#banner-dos-banners-mobile": {
+          "title": "Banner secundario y vitrina",
+          "props":{
+            "preserveLayoutOnMobile": true
+          },
+          "children": [
+            "flex-layout.col#banner-casa-ideas-mobile",
+            "flex-layout.col#banner-ondademar-mobile"
+          ]
+        },
+      
+        "flex-layout.col#banner-casa-ideas-mobile": {
+          "title": "Banner secundario",
+          "children": ["image#banner-casa-ideas-mobile"]
+        },
+      
+        "image#banner-casa-ideas-mobile": {
+          "props": {
+            "src": "assets/images/Casaideas.svg",
+            "maxHeight": 500
+          }
+        },
+      
+          "flex-layout.col#banner-ondademar-mobile": {
+          "title": "Banner secundario",
+          "children": ["image#banner-ondademar-mobile"]
+        },
+      
+        "image#banner-ondademar-mobile": {
+          "props": {
+            "src": "assets/images/ondademar.svg",
+            "maxHeight": 500
+          }
+        }
+}

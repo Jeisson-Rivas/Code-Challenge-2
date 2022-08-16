@@ -1,0 +1,210 @@
+{
+  "tab-list#home": {
+    "props": {
+      "defaultActiveTab": "home1"
+    },
+    "children": [
+      "tab-list.item.children#Tecnologia",
+      "tab-list.item.children#Electrodomesticos",
+      "tab-list.item.children#Juguetes",
+      "tab-list.item.children#Moda",
+      "tab-list.item.children#Belleza",
+      "tab-list.item.children#Deportes"
+    ]
+  },
+  "tab-list.item.children#Tecnologia": {
+    "props": {
+      "tabId": "home1"
+    },
+    "children": ["image#Tecnologia", "rich-text#Tecnologia"]
+  },
+  "image#Tecnologia": {
+    "props": {
+      "src": "assets/images/Tecnologia.svg",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#Tecnologia": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Tecnologia",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "tab-list.item.children#Electrodomesticos": {
+    "props": {
+      "tabId": "home2"},
+    "children": ["image#electrodomesticos", "rich-text#electro"]
+  },
+
+  "image#electrodomesticos": {
+    "props": {
+      "src": "assets/images/electrodomesticos.svg",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#electro": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Electrodomesticos",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "tab-list.item.children#Juguetes": {
+    "props": {
+      "tabId": "home3"},
+    "children": ["image#juguetes", "rich-text#Juguetes"]
+  },
+  "image#juguetes": {
+    "props": {
+      "src": "assets/images/juguetes.svg",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#Juguetes": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Juguetes",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+
+  "tab-list.item.children#Moda": {
+    "props": {
+      "tabId": "home4"},
+    "children": ["image#moda", "rich-text#Moda"]
+  },
+  "image#moda": {
+    "props": {
+      "src": "assets/images/Moda.svg",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#Moda": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Moda",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "tab-list.item.children#Belleza": {
+    "props": {
+      "tabId": "home5"},
+    "children": ["image#belleza", "rich-text#Belleza"]
+  },
+
+  "image#belleza": {
+    "props": {
+      "src": "assets/images/Belleza.svg",
+      "maxHeight": 500
+    }
+  },
+
+  "image#Belleza": {
+    "props": {
+      "src": "assets/images/Belleza.svg",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#Belleza": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Belleza",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "tab-list.item.children#Deportes": {
+    "props": {
+      "tabId": "home6"},
+    "children": ["image#Deportes", "rich-text#Deportes"]
+  },
+  "image#Deportes": {
+    "props": {
+      "src": "assets/images/Deportes.svg",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#Deportes": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Deportes",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#Tecnologia",
+      "tab-content.item#Electrodomesticos",
+      "tab-content.item#Juguetes",
+      "tab-content.item#Moda",
+      "tab-content.item#Belleza-y-cuidado-personal",
+      "tab-content.item#Deportes"
+    ]
+  },
+
+  "tab-content.item#Tecnologia": {
+    "props": {
+      "tabId": "home1"
+    },
+    "children": ["list-context.product-list#demo1"]
+  },
+
+  "tab-content.item#Electrodomesticos": {
+    "props": {
+      "tabId": "home2"
+    },
+    "children": ["list-context.product-list#demo1"]
+  },
+
+  "tab-content.item#Juguetes": {
+    "props": {
+      "tabId": "home3"
+    },
+    "children": ["list-context.product-list#demo1"]
+  },
+
+  "tab-content.item#Moda": {
+    "props": {
+      "tabId": "home4"
+    },
+    "children": ["list-context.product-list#demo1"]
+  },
+
+  "tab-content.item#Belleza-y-cuidado-personal": {
+    "props": {
+      "tabId": "home5"
+    },
+    "children": ["list-context.product-list#demo1"]
+  },
+
+  "tab-content.item#Deportes": {
+    "props": {
+      "tabId": "home6"
+    },
+    "children": ["list-context.product-list#demo1"]
+  }
+}

@@ -1,0 +1,79 @@
+{
+"flex-layout.col#footer-mobile": {
+    "props": {
+      "blockClass": "footer-mobile"
+    },
+
+    "children": [
+      "flex-layout.row#Newsletter-mobile",
+      "disclosure-layout#servicio-al-cliente",
+      "disclosure-layout#nosotros",
+      "disclosure-layout#informacion-de-contacto",
+      "flex-layout.row#Medios-de-pago-mobile",
+      "flex-layout.row#informativo-mobile"
+
+    ]
+  },
+//Newletter
+  "flex-layout.row#Newsletter-mobile": {
+    "title": "Newsletter-mobile",
+    "props": {
+      "blockClass": "footer-mobile"
+    },
+    "children": [
+        "newsletter-form"
+      ]
+},
+//Footer mobile Servicio al cliente
+"disclosure-layout#servicio-al-cliente": {
+"children": ["disclosure-trigger#servicio-al-cliente", "disclosure-content#servicio-al-cliente"]
+},
+"disclosure-trigger#servicio-al-cliente": {
+"children": ["rich-text#Servicio-al-cliente"]
+},
+
+"disclosure-content#servicio-al-cliente": {
+"children": ["flex-layout.col#servicio-al-cliente"]
+},
+//Footer mobile Nosotros
+"disclosure-layout#nosotros": {
+"children": ["disclosure-trigger#nosotros", "disclosure-content#nosotros"]
+},
+"disclosure-trigger#nosotros": {
+"children": ["rich-text#Nosotros"]
+},
+
+"disclosure-content#nosotros": {
+"children": ["flex-layout.col#Nosotros"]
+},
+//Footer mobile Información de contacto
+"disclosure-layout#informacion-de-contacto": {
+    "children": ["disclosure-trigger#informacion-de-contacto", "disclosure-content#informacion-de-contacto"]
+    },
+    "disclosure-trigger#informacion-de-contacto": {
+    "children": ["rich-text#Informacion-de-contacto"]
+    },
+    
+    "disclosure-content#informacion-de-contacto": {
+    "children": ["flex-layout.col#Informacion-de-contacto"]
+    },
+
+"flex-layout.row#Medios-de-pago-mobile": {
+    "children": [
+    "image#Visa",
+    "image#American",
+    "image#Diners",
+    "image#Efecty",
+    "image#Codensa",
+    "image#Davivienda",
+    "image#Pse",
+    "image#Lets",
+    "image#Pci"
+    ]
+},
+
+"flex-layout.row#informativo-mobile": {
+    "children": ["flex-layout.row#tercera-fila-footer"]
+    
+}
+}

@@ -1,0 +1,27 @@
+{
+    "store.custom#home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.phone"
+    ]
+  },
+  
+  "responsive-layout.desktop": {
+    "children": [
+    "flex-layout.row#banner-vitrina",
+    "flex-layout.row#banner-cuadricula",
+    "flex-layout.row#banner-trinidad"
+    ]
+  },
+  
+  "responsive-layout.phone": {
+    "children": [
+      "image#banner-adidas-mobile",
+      "image#banner-american-mobile",
+      "image#banner-offcorss-mobile",
+      "image#banner-casa-ideas-mobile",
+      "image#banner-ondademar-mobile",
+      "image#banner-cromantic-mobile"
+    ]
+  }
+  }

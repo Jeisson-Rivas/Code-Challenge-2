@@ -1,0 +1,106 @@
+{
+    "flex-layout.row#topbar": {
+      "title": "Top bar",
+      "props": {
+        "blockClass": "menu-link-topbar",
+        "horizontalAlign": "center",
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
+        "fullWidth": true
+      },
+      "children": [
+        "flex-layout.col#text-top-banner",
+        "flex-layout.col#hot-sale",
+        "flex-layout.col#mujer",
+        "flex-layout.col#hombre",
+        "flex-layout.col#ninos"
+      ]
+    },
+  
+    "flex-layout.col#text-top-banner": {  
+      "props": {
+        "preventVerticalStretch": true,
+        "verticalAlign": "middle"
+      },
+      "children": [
+        "rich-text#text-top-banner"
+      ]
+    },
+    "flex-layout.col#hot-sale": {  
+      "props": {
+        "preventVerticalStretch": true,
+        "verticalAlign": "middle"
+      },
+      "children": [
+        "link#hot-sale"
+      ]
+    },
+    "flex-layout.col#mujer": {  
+      "props": {
+        "preventVerticalStretch": true,
+        "verticalAlign": "middle"
+      },
+      "children": [
+        "link#mujer"
+      ]
+    },
+    "flex-layout.col#hombre": {  
+      "props": {
+        "preventVerticalStretch": true,
+        "verticalAlign": "middle"
+      },
+      "children": [
+        "link#hombre"
+      ]
+    },
+    "flex-layout.col#ninos": {  
+      "props": {
+        "preventVerticalStretch": true,
+        "verticalAlign": "middle"
+      },
+      "children": [
+        "link#ninos"
+      ]
+    },
+  
+    "rich-text#text-top-banner": {
+      "title": "Texto Top-banner",
+      "props": {
+        "blockClass": "link-topbar",
+        "text": "50% DCTO EN VESTUARIO Y ZAPATOS"
+      }
+    },
+    "link#hot-sale": {
+      "title": "HOT SALE",
+      "props": {
+        "blockClass": "link-topbar",
+        "label": "HOT SALE",
+        "href": "/"
+      }
+    },
+    "link#mujer": {
+      "title": "MUJER",
+      "props": {
+        "blockClass": "link-topbar",
+        "label": "MUJER",
+        "href": "/"
+      }
+    },
+    "link#hombre": {
+      "title": "HOMBRE",
+      "props": {
+        "blockClass": "link-topbar",
+        "label": "HOMBRE",
+        "href": "/"
+      }
+    },
+    "link#ninos": {
+      "title": "NIÑOS",
+      "props": {
+        "blockClass": "link-topbar",
+        "label": "NIÑOS",
+        "href": "/"
+      }
+    }
+  }
+  

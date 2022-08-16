@@ -1,0 +1,228 @@
+.container--layout--pcategory {
+    background: #E5E5E5;
+}
+
+.gallery {
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        margin-top: 5px;
+    }
+}
+
+.galleryTitle--layout {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    text-transform: lowercase;
+    display: block;
+}
+
+.galleryTitle--layout::first-letter {
+    text-transform: uppercase;
+}
+
+.orderByDropdown {
+    display: flex;
+}
+
+.orderByButton {
+    background: #E5E5E5;
+    border-radius: 3rem;
+    border: 2px solid;
+    width: 240px;
+    height: 50px;
+    border-color: #1468B3;
+    display: flex;
+    justify-content: center;
+}
+
+.filterPopupTitle {
+    color: #1468B3;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    margin-right: 10px;
+}
+
+.filterPopupArrowIcon {
+    color: #1468b3;
+    border-radius: 26px;
+    background: #d2dde5;
+    width: 18px;
+    height: 26px;
+    padding-left: 6px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caretIcon {
+    height: 12px;
+    width: 13px;
+}
+
+.orderByText {
+    display: none;
+}
+
+.totalProducts--layout {
+    display: contents;
+}
+
+.filterMessage {
+    display: none;
+}
+
+.filter__container--selectedFilters {
+    height: 3.5rem;
+    margin-top: 1.5rem;
+}
+
+.filterTitle {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #233C52;
+    text-transform: capitalize;
+}
+
+.filter__container--selectedFilters .filterTitleSpan {
+    font-size: 0;
+}
+
+.filter__container--selectedFilters .filterTitleSpan::before {
+    font-size: 18px;
+    content: 'Filtrar por';
+}
+
+.showingProducts {
+    font-size: 0px;
+    display: flex;
+}
+
+.showingProducts::before,
+.showingProductsCount {
+    display: flex;
+    content: '1 - ';
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #233C52;
+    display: flex;
+    justify-content: left;
+}
+
+.filterItem {
+    padding-top: 10px;
+}
+
+.filterItem :global(.vtex-checkbox__label) {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: block;
+    text-transform: lowercase;
+    color: #233c52;
+}
+
+.filterItem :global(.vtex-checkbox__label)::first-letter {
+    text-transform: uppercase;
+}
+
+.filter__container--selectedFilters .filterTemplateOverflow:nth-child(1n + 1) {
+    position: absolute;
+    left: 33%;
+    max-width: 57%;
+    max-height: 57px;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.filter__container--selectedFilters .filterTemplateOverflow:nth-child(1n + 1) .filterItem :global(.vtex-checkbox__label) {
+    font-weight: 600;
+}
+
+.filter__container--selectedFilters .filterItem--selected {
+    margin: 6px;
+    border-radius: 30px;
+    padding: 6px 22px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 12px #0000000d;
+    display: flex;
+    min-width: 188px;
+    height: max-content;
+}
+
+.filter__container--selectedFilters :global(.vtex-checkbox__container) {
+    display: block;
+}
+
+.filterContent {
+    display: block;
+}
+
+.filterContent :global(.vtex-checkbox__box) {
+    border-radius: 4px;
+    border: 1px solid #233C52;
+}
+
+.galleryItem--normal:hover :global(.vtex-flex-layout-0-x-flexCol--fincont) {
+    display: flex;
+}
+
+.checkbox__label {
+    width: 90%;
+}
+
+.filterIcon {
+    color: #1468b3;
+    border-radius: 26px;
+    background: #d8e1e8d6;
+    width: 15px;
+    height: 30px;
+    padding-left: 7px;
+    padding-right: 8px;
+}
+
+@media (max-width: 600px) {
+    .filterIcon {
+        color: #1468b3;
+        border-radius: 26px;
+        background: #d8e1e8d6;
+        width: 15px;
+        height: 30px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+.buttonShowMore :global(.vtex-button__label) {
+    font-size: 0;
+    display: block;
+    text-transform: lowercase;
+}
+
+.buttonShowMore :global(.vtex-button__label)::before {
+    font-size: 18px;
+    content: 'Cargar más productos';
+    text-transform: initial;
+}
+
+.buttonShowMore :global(.vtex-button) {
+    align-self: center;
+    border-radius: 16px;
+    background: #1468B3;
+    margin-top: 1rem;
+}

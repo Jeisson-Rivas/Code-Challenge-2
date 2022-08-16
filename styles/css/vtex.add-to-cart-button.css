@@ -1,0 +1,9 @@
+.buttonText--botoncont {
+    font-size: 0;
+}
+
+.buttonText--botoncont::after {
+    content: "Ver productos";
+    font-size: 15px;
+    text-transform: initial;
+}

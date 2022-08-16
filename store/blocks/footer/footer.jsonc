@@ -1,0 +1,554 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "props": {
+  "blockClass": "Fondo-footer"
+    },
+    "children": ["flex-layout.row#footer"
+    // "image#footer-fondo"
+  ]
+  },
+
+  // Primera Fila
+  "flex-layout.row#footer": {
+    "title": "Primer Texto Footer",
+    "props": {
+      "blockClass": "primer",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      // "preventHorizontalStretch": true,
+      // "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+
+    "children": ["flex-layout.col#footer"]
+  },
+
+  "flex-layout.col#footer": {
+    "props": {
+      "blockClass": "primera-fila"
+    },
+
+    "children": [
+      "flex-layout.row#primera-fila",
+      "flex-layout.row#medios-de-pago",
+      "flex-layout.row#tercera-fila-footer"
+    ]
+  },
+
+  "flex-layout.row#primera-fila": {
+    "title": "Iconos de medios de pago",
+    "props": {
+      "blockClass": "primera-fila",
+      "fullWidth": true
+    },
+
+    "children": [
+      "newsletter-form",
+      "flex-layout.col#servicio-al-cliente",
+      "flex-layout.col#Nosotros",
+      "flex-layout.col#Informacion-de-contacto"
+    ]
+  },
+  // Newsletter
+
+  "newsletter-form": {
+    "props": {
+      "blockClass": "newsletter"
+    },
+    "children": [
+      "rich-text#suscribete",
+      "rich-text#Datos",
+      "flex-layout.row#Newletter",
+      "flex-layout.row#Terminos-y-condiciones"
+    ]
+  },
+
+  "rich-text#suscribete": {
+    "props": {
+      "text": "Suscríbete",
+      "blockClass": "suscribete"
+    }
+  },
+
+  "rich-text#Datos": {
+    "props": {
+      "text": "Dejanos tu correo y recibe promociones exclusivas",
+      "blockClass": "promociones-exclusivas"
+    }
+  },
+
+  "flex-layout.row#Newletter": {
+    "title": "Newletter",
+    "props": {
+      "blockClass": "second-banner",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+
+    "children": ["flex-layout.col#input", "flex-layout.col#submit"]
+  },
+
+  "flex-layout.col#input": {
+    "title": "Banner secundario",
+    "children": ["newsletter-input-email"]
+  },
+
+  "flex-layout.col#submit": {
+    "title": "Banner secundario",
+    "children": ["newsletter-submit"]
+  },
+
+  "flex-layout.row#Terminos-y-condiciones": {
+    "title": "Newletter",
+    "props": {
+      "blockClass": "second-banner",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+
+    "children": ["flex-layout.col#checkbox"]
+  },
+
+  "flex-layout.col#checkbox": {
+    "title": "Banner secundario",
+    "children": ["newsletter-checkbox-confirmation"]
+  },
+
+  // Primera columna
+  "flex-layout.col#servicio-al-cliente": {
+    "title": "Primer texto",
+    "props": {
+      "blockClass": "servicio-al-cliente"
+    },
+    "children": [
+      "rich-text#Servicio-al-cliente",
+      "menu-item#Preguntas-Frecuentes",
+      "menu-item#ayuda",
+      "menu-item#cambios",
+      "menu-item#terminos",
+      "menu-item#politicas",
+      "menu-item#contactanos"
+    ]
+  },
+
+  "rich-text#Servicio-al-cliente": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Servicio al cliente",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "menu-item#Preguntas-Frecuentes": {
+    "props": {
+      "id": "menu-item-preguntas-frecuentes",
+      "itemProps": {
+        "href": "#",
+        "text": "Preguntas Frecuentes"
+      }
+    }
+  },
+
+  "menu-item#ayuda": {
+    "props": {
+      "id": "menu-item-ayuda",
+      "itemProps": {
+        "href": "#",
+        "text": "Ayuda PQR"
+      }
+    }
+  },
+
+  "menu-item#cambios": {
+    "props": {
+      "id": "menu-item-cambios",
+      "itemProps": {
+        "href": "#",
+        "text": "Cambios y devoluciones"
+      }
+    }
+  },
+
+  "menu-item#terminos": {
+    "props": {
+      "id": "menu-item-terminos",
+      "itemProps": {
+        "href": "#",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+
+  "menu-item#politicas": {
+    "props": {
+      "id": "menu-item-politicas",
+      "itemProps": {
+        "href": "#",
+        "text": "Políticas de datos"
+      }
+    }
+  },
+
+  "menu-item#contactanos": {
+    "props": {
+      "id": "menu-item-contactanos",
+      "itemProps": {
+        "href": "#",
+        "text": "Contáctanos"
+      }
+    }
+  },
+  // Segunda Columna
+  "flex-layout.col#Nosotros": {
+    "title": "Segunda Fila Footer",
+    "props": {
+      "blockClass": "segunda-fila-footer"
+        },
+    "children": [
+      "rich-text#Nosotros",
+      "menu-item#Sobre-nosotros",
+      "menu-item#Nuestros-servicios",
+      "menu-item#Registra-tu-factura",
+      "menu-item#como-llegar",
+      "menu-item#responsabilidad-social"
+    ]
+  },
+
+  "rich-text#Nosotros": {
+    "props": { "text": "Nosotros" }
+  },
+
+  "menu-item#Sobre-nosotros": {
+    "props": {
+      "id": "menu-item-sobre-nosotros",
+      "itemProps": {
+        "href": "#",
+        "text": "Sobre nosotros"
+      }
+    }
+  },
+
+  "menu-item#Nuestros-servicios": {
+    "props": {
+      "id": "menu-item-nuestros-servicios",
+      "itemProps": {
+        "href": "#",
+        "text": "Nuestros servicios"
+      }
+    }
+  },
+
+  "menu-item#Registra-tu-factura": {
+    "props": {
+      "id": "menu-item-registra-tu-factura",
+      "itemProps": {
+        "href": "#",
+        "text": "Registra tu factura"
+      }
+    }
+  },
+
+  "menu-item#como-llegar": {
+    "props": {
+      "id": "menu-item-como-llegar",
+      "itemProps": {
+        "href": "#",
+        "text": "¿Cómo llegar?"
+      }
+    }
+  },
+
+  "menu-item#responsabilidad-social": {
+    "props": {
+      "id": "menu-item-responsabilidad-social",
+      "itemProps": {
+        "href": "#",
+        "text": "Responsabilidad social"
+      }
+    }
+  },
+  // Tercera columna
+  "flex-layout.col#Informacion-de-contacto": {
+    "title": "tercera fila Footer",
+    "props": {
+    "blockClass": "tercera-fila-footer"
+    },
+    "children": [
+      "rich-text#Informacion-de-contacto",
+      "menu-item#Direccion-uno",
+      "menu-item#Direccion-dos",
+      "menu-item#Horario",
+      "menu-item#telefono",
+      "menu-item#Siguenos",
+      "social-networks"
+    ]
+  },
+
+  "rich-text#Informacion-de-contacto": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Información de contacto",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "menu-item#Direccion-uno": {
+    "props": {
+      "id": "menu-item-direccion-uno",
+      "itemProps": {
+        "href": "#",
+        "text": "Calle 185 No. 45-03"
+      }
+    }
+  },
+
+  "menu-item#Direccion-dos": {
+    "props": {
+      "id": "menu-item-direccion-dos",
+      "itemProps": {
+        "href": "#",
+        "text": "Cost. Occidental Auto. Norte"
+      }
+    }
+  },
+
+  "menu-item#Horario": {
+    "props": {
+      "id": "menu-item-Horario",
+      "itemProps": {
+        "href": "#",
+        "text": "Horarios: 8:00 a.m. a 9:00 p.m."
+      }
+    }
+  },
+
+  "menu-item#telefono": {
+    "props": {
+      "id": "menu-item-telefono",
+      "itemProps": {
+        "href": "#",
+        "text": "605 07 07"
+      }
+    }
+  },
+
+  "menu-item#Siguenos": {
+    "props": {
+      "id": "menu-item-Siguenos",
+      "itemProps": {
+        "href": "#",
+        "text": "Síguenos"
+      }
+    }
+  },
+
+  "flex-layout.row#footer-desktop": {
+    "children": ["social-networks"]
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://instagram.com/foo", "name": "Instagram" },
+        { "url": "https://youtube.com/foo", "name": "YouTube" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" }
+      ]
+    }
+  },
+
+  // Medios de pago
+  "flex-layout.row#medios-de-pago": {
+    "title": "Iconos finales",
+    "props": {
+      "blockClass": "medios-de-pago",
+      "fullWidth": false
+    },
+    "children": [
+      "rich-text#medios-de-pago",
+      "image#Visa",
+      "image#American",
+      "image#Diners",
+      "image#Efecty",
+      "image#Codensa",
+      "image#Davivienda",
+      "image#Pse",
+      "image#Lets",
+      "image#Pci"
+    ]
+  },
+
+  "rich-text#medios-de-pago": {
+    "props": {
+      "blockClass": "texto-medios-de-pago",
+      "text": "Medios de pago y sitio seguro"
+    }
+  },
+
+  "image#Visa": {
+    "props": {
+      "src": "assets/images/Visa.svg",
+      "maxWidth": 34,
+      "maxHeight": 11
+    }
+  },
+
+  "image#American": {
+    "props": {
+      "src": "assets/images/american-express.svg",
+      "maxWidth": 24,
+      "maxHeight": 24
+    }
+  },
+
+  "image#Diners": {
+    "props": {
+      "src": "assets/images/Diners.svg",
+      "maxWidth": 55,
+      "maxHeight": 14
+    }
+  },
+
+  "image#Efecty": {
+    "props": {
+      "src": "assets/images/Efecty.svg",
+      "maxWidth": 53,
+      "maxHeight": 19
+    }
+  },
+
+  "image#Codensa": {
+    "props": {
+      "src": "assets/images/Codensa.svg",
+      "maxWidth": 36,
+      "maxHeight": 25
+    }
+  },
+  "image#Davivienda": {
+    "props": {
+      "src": "assets/images/Davivienda.svg",
+      "maxWidth": 70,
+      "maxHeight": 6
+    }
+  },
+
+  "image#Pse": {
+    "props": {
+      "src": "assets/images/PSE.svg",
+      "maxWidth": 45,
+      "maxHeight": 18
+    }
+  },
+
+  "image#Lets": {
+    "props": {
+      "src": "assets/images/lets.svg",
+      "maxWidth": 35,
+      "maxHeight": 35
+    }
+  },
+
+  "image#Pci": {
+    "props": {
+      "src": "assets/images/selloPCI.svg",
+      "maxWidth": 44,
+      "maxHeight": 44
+    }
+  },
+
+  // Footer informativo
+  "flex-layout.row#tercera-fila-footer": {
+    "props": {
+      "blockClass": "tercera-fla-footer"
+        },
+    "children": [
+      "rich-text#Derechos",
+      "rich-text#Desarrollado",
+      "image#Desarrollado",
+      "rich-text#Tegnologia",
+      "image#Vtex"
+    ]
+  },
+
+  "rich-text#Derechos": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Todos los derechos reservados. Copyright © C.C. Santafé 2020",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "rich-text#Desarrollado": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Desarrollado por",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+
+  "image#Desarrollado": {
+    "props": {
+      "src": "assets/images/TITA.svg",
+      "maxWidth": 81,
+      "maxHeight": 7
+    }
+  },
+
+  "rich-text#Tegnologia": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Tecnología",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+  "image#Vtex": {
+    "props": {
+      "src": "assets/images/VTEX.svg",
+      "maxWidth": 49,
+      "maxHeight": 18
+    }
+  },
+
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer-mobile"]
+  },
+
+  // Primera Fila
+  "flex-layout.row#footer-mobile": {
+    "title": "Primer Texto Footer Mobile",
+    "props": {
+      "blockClass": "footer-mobile",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+
+    "children": ["flex-layout.col#footer-mobile"]
+  }
+}

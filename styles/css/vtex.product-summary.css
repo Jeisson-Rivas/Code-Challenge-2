@@ -1,0 +1,105 @@
+.container {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 12px #0000000d;
+}
+
+.nameContainer {
+    padding: 0.5rem 1rem;
+    height: 50px;
+    text-align: justify;
+    width: fit-content;
+    text-transform: lowercase;
+    display: block;
+}
+
+.productBrandName {
+    display: block;
+    text-transform: lowercase;
+    font-size: 14px;
+    line-height: 18px;
+    color: #233C52;
+}
+
+.productBrandName::first-letter {
+    text-transform: uppercase;
+}
+
+.priceContainer {
+    height: 40px;
+    padding: inherit;
+    justify-content: center
+}
+
+.container--contenedorprod :global(.vtex-button) {
+    width: 140px;
+    border-radius: 16px;
+    align-self: end;
+    margin: 0px 1rem;
+    background: #1468B3;
+    border-color: #1468B3;
+}
+
+.brandName {
+    display: block;
+    text-align: left;
+    text-transform: lowercase;
+    font-size: 15px;
+    line-height: 19px;
+    height: 40px;
+    color: #233C52;
+}
+
+.brandName::first-letter {
+    text-transform: uppercase;
+}
+
+.productPriceClass {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 600px) {
+    .sellingPriceContainer {
+        height: 25px;
+    }
+    .nameContainer {
+        height: 60px;
+    }
+    .productPriceClass {
+        flex-direction: column-reverse;
+    }
+    .productBrandContainer {
+        margin: 3rem 62px 1rem 1rem !important;
+        text-align: initial;
+        height: 30px;
+    }
+}
+
+.price_listPrice--contprice {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #70707099;
+}
+
+.price_sellingPrice--contprice {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #233C52;
+}
+
+.productBrandContainer {
+    display: flex;
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+.price_className--contprice {
+    display: flex;
+    align-self: start;
+    margin: 0 1rem;
+}

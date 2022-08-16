@@ -1,0 +1,40 @@
+{
+
+    "image#banner-adidas-mobile": {
+        "props": {
+          "src": "assets/images/adidas.svg",
+          "maxHeight": 500
+        }
+      },
+    "image#banner-american-mobile": {
+    "props": {
+      "src": "assets/images/americaneagle.svg",
+      "maxHeight": 500
+    }
+  },
+  "image#banner-offcorss-mobile": {
+    "props": {
+      "src": "assets/images/offcorss.svg",
+      "maxHeight": 500
+    }
+  },
+  "image#banner-casa-ideas-mobile": {
+    "props": {
+      "src": "assets/images/Casaideas.svg",
+      "maxHeight": 500
+    }
+  },
+  "image#banner-ondademar-mobile": {
+    "props": {
+      "src": "assets/images/ondademar.svg",
+      "maxHeight": 500
+    }
+  },
+  "image#banner-cromantic-mobile": {
+    "props": {
+      "src": "assets/images/cromantic.svg",
+      "maxHeight": 500
+    }
+  }
+
+}

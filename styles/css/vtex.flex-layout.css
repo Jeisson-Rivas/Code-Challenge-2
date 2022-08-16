@@ -1,0 +1,140 @@
+.flexRow--pagcategory {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flexRow--Contenidocat {
+    margin: 2rem 0;
+}
+
+.flexCol--titlecat {
+    width: max-content !important;
+}
+
+.flexColChild--contentcat {
+    height: auto !important;
+}
+
+.flexCol--productCountCol {
+    width: initial;
+}
+
+.flexColChild--productCountCol {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.flexCol--bcontizqcat {
+    margin-left: 2rem;
+}
+
+.flexColChild--orderByCol {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.flexRow--qvcontent {
+    height: 85%;
+    width: 90%;
+    display: block;
+    align-self: center;
+}
+
+.flexRowContent--qvcontent {
+    display: flex;
+    height: 100%;
+}
+
+.flexCol--fincont {
+    flex-direction: row;
+    height: min-content;
+    margin: 0 1rem;
+    display: none;
+}
+
+.flexCol--servicio-al-cliente {
+    width: 200px !important;
+    height: 265px;
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 40px; */
+    font-size: 14px;
+    font: nunito Sans;
+}
+
+.flexCol--segunda-fila-footer {
+    width: 200px !important;
+    height: 265px;
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 40px; */
+    font-size: 14px;
+    font: nunito Sans;
+}
+
+.flexCol--tercera-fila-footer {
+    width: 275px !important;
+    height: 265px;
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 40px; */
+    font-size: 14px;
+    font: nunito Sans;
+}
+
+.flexRow--primera-fila {
+    background-image: url("assets/images/image-footer.png");
+    background-size: 100%;
+}
+
+@media (max-width: 600px) {
+    .stretchChildrenWidth :global(.vtex-search-result-3-x-showingProducts) {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .flexRowContent :global(.vtex-breadcrumb-1-x-container) {
+        margin-left: 5%;
+    }
+}
+
+.flexRow--cpalpdp {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/* .flexRowContent :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 90% !important;
+    margin: 0 auto;
+} */
+
+
+/* .stretchChildrenWidth {
+    margin: auto;
+    padding-block: 20px;
+    padding-inline: 10px;
+}
+
+.stretchChildrenWidth:nth-child(1+n) {
+    width: 30%;
+} */
+
+
+/* position: absolute;
+left: 50.51%;
+right: 48.68%;
+top: 95.5%;
+bottom: 4.5%;
+
+opacity: 0.15;
+/* Black 60% */
+
+
+/* border: 1px solid #707070;
+transform: rotate(90deg); */
